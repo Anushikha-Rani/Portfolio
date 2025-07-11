@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anushikha — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+        <nav>
+            <div class="left">Anushikha's Portfolio</div>
+            <div class="right">
+                <ul>
+                   <li><a href="/">Home</a></li>
+                   <li><a href="/">About</a></li>
+                   <li><a href="/">Services</a></li>
+                   <li><a href="/">Projects</a></li>
+                   <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>  
+  <main>
+    <div class="container">
+      <h1>I am <span>Anushikha Rani</span></h1>
+      <span id="element"></span>
+      <p>Full‑Stack Developer • Web • Mobile • AI</p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+</main>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hello! I’m Anushikha Rani, passionate about crafting beautiful and performant apps with delightful user experiences...</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <!-- Repeat this for each project -->
+        <div class="project-item">
+          <h3>Project Title</h3>
+          <p>Short project description goes here.</p>
+          <a href="#" target="_blank">View Live</a>
+          <a href="#" target="_blank">Source Code</a>
+        </div>
+        <!-- ... -->
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required/>
+        <input type="email" name="email" placeholder="Your Email" required/>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="form-status"></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Anushikha Rani. All rights reserved.</p>
+    </div>
+  </footer>
+   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+    <script> 
+        var typed = new Typed('#element', {
+        strings: ['Web Developer', 'Graphic Designer', 'Web Designer', 'Video Editor', 'Android Developer'],
+        typeSpeed: 50,
+        });
+    </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
