@@ -300,12 +300,16 @@
   <section id="projects" class="projects">
     <h2>Featured Projects</h2>
     <div class="project" onclick="openModal('project1')">
-      <img src="project1.jpg" alt="Project 1">
-      <p>Project 1</p>
+      <img src="project1.png" alt="Project 1">
+      <p>Amazon clone</p>
     </div>
     <div class="project" onclick="openModal('project2')">
-      <img src="project2.jpg" alt="Project 2">
-      <p>Project 2</p>
+      <img src="project2.png" alt="Project 2">
+      <p>Ecommerce</p>
+    </div>
+    <div class="project" onclick="openModal('project3')">
+      <img src="project3.png" alt="Project 3">
+      <p>Portfollio</p>
     </div>
   </section>
 
@@ -313,16 +317,24 @@
   <div id="project1" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal('project1')">&times;</span>
-      <h3>Project 1</h3>
-      <p>Description of Project 1.</p>
+      <h3>Amazon clone</h3>
+      <p>Amazon clone website</p>
     </div>
   </div>
 
   <div id="project2" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal('project2')">&times;</span>
-      <h3>Project 2</h3>
-      <p>Description of Project 2.</p>
+      <h3>Ecommerce</h3>
+      <p>Ecommerce website for fashion and beauty</p>
+    </div>
+  </div>
+
+  <div id="project3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('project3')">&times;</span>
+      <h3>Portfollio</h3>
+      <p>My Portfolio including details </p>
     </div>
   </div>
 
@@ -351,7 +363,7 @@
   <script>
     new Typed('#element', {
       strings: ['Web Developer','Graphic Designer','UI Specialist','Android Developer'],
-      typeSpeed:50, loop:true
+      typeSpeed:20, loop:true
     });
     ScrollReveal().reveal('.reveal', {
       distance: '40px',
